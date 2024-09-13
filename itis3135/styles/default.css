@@ -1,0 +1,46 @@
+body {
+    background: #73877B;
+    color: #F5E4D7;
+    font-family: Tahoma;
+}
+header, main, footer {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-pic {
+    height: 420px;
+    border: 7px solid #F5E4D7;
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+.footnote {
+    font-size: 12px;
+    text-align: right;
+}
+footer {
+    text-align: center;
+}
+nav {
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:link {
+    color: #DB2B39;
+}
+a:visited {
+    color: #032B43;
+}
+a:hover {
+    color: #6F1A07;
+}
