@@ -11,7 +11,6 @@ header, main, footer {
 
 .intro-pic {
     height: 420px;
-    border: 7px solid #F5E4D7;
     border-radius: 200px;
     display: block;
     margin-left: auto;
@@ -43,4 +42,12 @@ a:visited {
 }
 a:hover {
     color: #6F1A07;
+}
+#validation-link-html, #validation-link-css {
+    border:0;
+    width:88px;
+    height:31px;
+}
+.main-p {
+    text-align: center;
 }
