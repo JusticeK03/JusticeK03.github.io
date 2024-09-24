@@ -1,6 +1,6 @@
 body {
-    background: #FBF2C0;
-    color: #43281C;
+    background: #E8F0FF;
+    color: #4C5454;
     font-family: Tahoma;
 }
 header, main, footer {
@@ -35,13 +35,13 @@ nav {
     margin-right: auto;
 }
 a:link {
-    color: #ff291e;
+    color: #FF715B;
 }
 a:visited {
-    color: #DB2763;
+    color: #8C1C13;
 }
 a:hover {
-    color: #C492B1;
+    color: #523F38;
 }
 #validation-link-html, #validation-link-css {
     border:0;
@@ -49,9 +49,5 @@ a:hover {
     height:31px;
 }
 .main-p {
-    text-align: center;
-}
-
-main p {
     text-align: center;
 }
