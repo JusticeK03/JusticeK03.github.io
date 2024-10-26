@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Justice Keistler's Jumbo Kiwi || ITIS3135 Forms</title>
+	<link href="./styles/default.css" rel="stylesheet">
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div data-include="components/header.html"></div>
+	<main>
+        <h2> ITIS 3135 : Forms</h2>
+        <form action="#" id="inquiry-iorm">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required size="30"><br><br>
+            
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+            
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+            
+            
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label><input type="checkbox" name="contactMethod" value="phone"> Phone</label><br>
+                <label><input type="checkbox" name="contactMethod" value="email"> Email</label><br>
+                <label><input type="checkbox" name="contactMethod" value="mail"> Mail</label>
+            </fieldset><br>
+    
+            
+            <fieldset>
+                <legend>Are you a returning customer?</legend>
+                <label><input type="radio" name="customerType" value="yes" required> Yes</label><br>
+                <label><input type="radio" name="customerType" value="no"> No</label>
+            </fieldset><br>
+    
+            
+            <label for="product-interest">Select the category you're interested in:</label>
+            <select id="product-interest" name="product-Interest" required>
+                <option value="">--Please choose an option--</option>
+                <option value="apparel">Apparel</option>
+                <option value="campingGear">Camping Gear</option>
+                <option value="events">Events</option>
+                <option value="military-gear">Military Gear</option>
+                <option value="forged-items">Forged Items</option>
+            </select><br><br>
+            
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    
+	<div data-include="components/footer.html"></div>
+		<script src="scripts/HTMLInclude.min.js"></script>
+		<script>
+			document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+			document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+		</script>
+</body>
+</html>

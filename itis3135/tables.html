@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Justice Keistler's Jumbo Kiwi || ITIS3135 Tables</title>
+	<link href="./styles/default.css" rel="stylesheet">
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div data-include="components/header.html"></div>
+	<main>
+		<h2> ITIS 3135 : Tables</h2>
+		<h3>My Tabular Data</h3>
+        <ol>
+            <li>
+                <strong>Jack Thompson</strong><br>
+                Email: jack.thompson@aol.com<br>
+                Years of Service: 5<br>
+                Salary: $45,000
+            </li>
+            <li>
+                <strong>Emily Rodriguez</strong><br>
+                Email: emily.rod@gmail.com<br>
+                Years of Service: 3<br>
+                Salary: $38,000
+            </li>
+            <li>
+                <strong>Mickey Mouse</strong><br>
+                Email: mickey.mouse@gmail.com<br>
+                Years of Service: 10<br>
+                Salary: $60,000
+            </li>
+            <li>
+                <strong>Samantha Green</strong><br>
+                Email: samantha.green@yahoo.com<br>
+                Years of Service: 7<br>
+                Salary: $52,000
+            </li>
+            <li>
+                <strong>John Doe</strong><br>
+                Email: johndoe@gmail.com<br>
+                Years of Service: 1<br>
+                Salary: $30,000
+            </li>
+            <li>
+                <strong>Tina Fey</strong><br>
+                Email: tina.fey@hotmail.com<br>
+                Years of Service: 4<br>
+                Salary: $40,000
+            </li>
+            <li>
+                <strong>Bob Builder</strong><br>
+                Email: bob.builder@yahoo.com<br>
+                Years of Service: 15<br>
+                Salary: $70,000
+            </li>
+            <li>
+                <strong>Lucy Liu</strong><br>
+                Email: lucy.liu@gmail.com<br>
+                Years of Service: 6<br>
+                Salary: $48,000
+            </li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>Jack Thompson</td>
+                <td>jack.thompson@aol.com</td>
+                <td>5</td>
+                <td>$45,000</td>
+            </tr>
+            <tr>
+                <td>Emily Rodriguez</td>
+                <td>emily.rod@gmail.com</td>
+                <td>3</td>
+                <td>$38,000</td>
+            </tr>
+            <tr>
+                <td>Mickey Mouse</td>
+                <td>mickey.mouse@gmail.com</td>
+                <td>10</td>
+                <td>$60,000</td>
+            </tr>
+            <tr>
+                <td>Samantha Green</td>
+                <td>samantha.green@yahoo.com</td>
+                <td>7</td>
+                <td>$52,000</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>johndoe@gmail.com</td>
+                <td>1</td>
+                <td>$30,000</td>
+            </tr>
+            <tr>
+                <td>Tina Fey</td>
+                <td>tina.fey@hotmail.com</td>
+                <td>4</td>
+                <td>$40,000</td>
+            </tr>
+            <tr>
+                <td>Bob Builder</td>
+                <td>bob.builder@yahoo.com</td>
+                <td>15</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td>Lucy Liu</td>
+                <td>lucy.liu@gmail.com</td>
+                <td>6</td>
+                <td>$48,000</td>
+            </tr>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <table>
+                <caption>Employee Information</caption>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Marketing</td>
+                    <td>Jack Thompson</td>
+                    <td headers="jack" scope="row">jack.thompson@aol.com</td>
+                    <td>5</td>
+                    <td>$3,750</td>
+                </tr>
+                <tr>
+                    <td>Emily Rodriguez</td>
+                    <td headers="emily" scope="row">emily.rod@gmail.com</td>
+                    <td>3</td>
+                    <td>$3,167</td>
+                </tr>
+                <tr>
+                    <td>Mickey Mouse</td>
+                    <td headers="mickey" scope="row">mickey.mouse@gmail.com</td>
+                    <td>10</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Sales</td>
+                    <td>Samantha Green</td>
+                    <td headers="samantha" scope="row">samantha.green@yahoo.com</td>
+                    <td>7</td>
+                    <td>$4,333</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td headers="john" scope="row">johndoe@gmail.com</td>
+                    <td>1</td>
+                    <td>$2,500</td>
+                </tr>
+                <tr>
+                    <td>Tina Fey</td>
+                    <td headers="tina" scope="row">tina.fey@hotmail.com</td>
+                    <td>4</td>
+                    <td>$3,333</td>
+                </tr>
+                <tr>
+                    <td>Support</td>
+                    <td>Bob Builder</td>
+                    <td headers="bob" scope="row">bob.builder@yahoo.com</td>
+                    <td>15</td>
+                    <td>$5,833</td>
+                </tr>
+                <tr>
+                    <td>Support</td>
+                    <td>Lucy Liu</td>
+                    <td headers="lucy" scope="row">lucy.liu@gmail.com</td>
+                    <td>6</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <th>51</th>
+                    <th>$42,083</th>
+                </tr>
+            </table>
+        </figure>
+        
+	</main>
+	<div data-include="components/footer.html"></div>
+		<script src="scripts/HTMLInclude.min.js"></script>
+		<script>
+			document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+			document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+		</script>
+</body>
+</html>

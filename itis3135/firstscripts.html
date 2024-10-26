@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Scripts</title>
+    <link href="./styles/default.css" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2> ITIS 3135 : First JavaScripts</h2>
+        <h3 id="date"></h3>
+
+        <form id="userInfo">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="mood">How are you feeling today?</label>
+            <input type="text" id="mood" required>
+
+            <button type="button" onclick="displayGreeting()">Submit</button>
+            <p id="displayGreeting"></p>
+            <h3 id="greeting"></h3>
+        </form>
+
+        <form id="polygonForm">
+            <label for="sides">Enter a number of sides (0-10):</label>
+            <input type="number" id="sides" required>
+            <button type="button" onclick="checkPolygon()">Submit</button>
+            <h3 id="polygonName"></h3>
+        </form>
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
