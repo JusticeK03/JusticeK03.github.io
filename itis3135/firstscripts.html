@@ -11,27 +11,81 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2> ITIS 3135 : First JavaScripts</h2>
-        <h3 id="date"></h3>
+        <p id="date"></p>
 
-        <form id="userInfo">
+        <form id="user-info">
             <label for="name">Your Name:</label>
             <input type="text" id="name" required>
 
             <label for="mood">How are you feeling today?</label>
             <input type="text" id="mood" required>
 
-            <button type="button" onclick="displayGreeting()">Submit</button>
-            <p id="displayGreeting"></p>
-            <h3 id="greeting"></h3>
+            <button type="button" id="greeting-button">Submit</button>
+            <p id="display-greeting"></p>
+            <p id="greeting"></p>
         </form>
 
-        <form id="polygonForm">
+        <form id="polygon-form">
             <label for="sides">Enter a number of sides (0-10):</label>
             <input type="number" id="sides" required>
-            <button type="button" onclick="checkPolygon()">Submit</button>
-            <h3 id="polygonName"></h3>
+            <button type="button" id="polygon-button">Submit</button>
+            <p id="polygon-name"></p>
         </form>
 
+        <section>
+            <h3>Inventory Form</h3>
+            <form id="inventory-form">
+                <label for="inventory-select">Choose an item:</label>
+                <select id="inventory-select">
+                    <option value="Camp Knives">Camp Knives</option>
+                    <option value="US Military Gear">US Military Gear</option>
+                    <option value="British Military Gear">British Military Gear</option>
+                    <option value="MRE">MRE</option>
+                    <option value="Night Vision Goggles">Night Vision Goggles</option>
+                </select>
+                <button type="button" id="check-inventory-button">Check Inventory</button>
+                <p id="output"></p>
+            </form>
+        </section>
+
+        <section>
+            <h3>Disguise Form</h3>
+            <form id="disguise-form">
+                <button type="button" id="disguise-button">Choose Camouflage</button>
+                <p id="disguise-output"></p>
+            </form>
+        </section>
+
+        <section>
+            <h3>Total Cost Form</h3>
+            <form id="cost-form">
+                <label for="cost-select">Choose an item:</label>
+                <select id="cost-select">
+                    <option value="Camp Knives">Camp Knives</option>
+                    <option value="US Military Gear">US Military Gear</option>
+                    <option value="British Military Gear">British Military Gear</option>
+                    <option value="MRE">MRE</option>
+                    <option value="Night Vision Goggles">Night Vision Goggles</option>
+                </select>
+        
+                <label for="quantity-input">Quantity:</label>
+                <input type="number" id="quantity-input" min="1" placeholder="Enter quantity" required>
+        
+                <button type="submit" id="calculate-cost-button">Calculate Total Cost</button>
+                <p id="output1"></p>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Discount Form</h3>
+            <form id="discount-form">
+                <label for="total-input">Enter Total Cost:</label>
+                <input type="number" id="total-input" min="0" step="0.01" placeholder="Enter total cost" required>
+        
+                <button type="submit" id="get-discount-button">Get Random Discount</button>
+                <p id="output2"></p>
+            </form>
+        </section>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/defaultscripts.js"></script>

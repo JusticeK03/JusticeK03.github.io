@@ -17,7 +17,7 @@ header, main, footer {
     margin-right: auto;
     margin-top: 20px;
 }
-h1, h2, h3 {
+h1, h2, h3{
     text-align: center;
 }
 .footnote {
@@ -104,6 +104,7 @@ button {
     font-size: 16px;
 }
 
+
 /* for tablets*/
 @media (max-width: 900px) {
     body {
@@ -166,5 +167,34 @@ button {
     button {
         padding: 6px 12px;
         font-size: 12px;
+    }
+}
+/* larger screens*/
+@media (min-width: 901px) and (max-width: 1200px) {
+    body {
+        background: #B0C4DE;
+        font-size: 18px;
+    }
+
+    .intro-pic {
+        height: 400px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .footnote {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 2rem;
+        max-width: 600px;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 }
