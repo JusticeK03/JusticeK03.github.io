@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Overview</title>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link href="./styles/default.css" rel="stylesheet">
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Aiden_Valentine_ResumePage <br>
+    <div data-include="components/header.html"></div>
+    <main>
+    <h2>Aiden_Valentine_ResumePage <br>
         Justice Keistler <br>
         10/14/2024
-        </h1>
-    <h2>Requirements and Design Document</h2>
+        </h2>
+    <h3>Requirements and Design Document</h3>
     <section>
-        <h3><strong>Project Overview:</strong></h3>
+        <h4><strong>Project Overview:</strong></h4>
         <p>I will be creating a website for a friend and student at UNCC. The goal for this website is to give my client a resume website that they can show to future employers or to have a professional hub with all of their information. The content of the website will have a index page, an about page, projects page, resume page, and a Contact my page</p>
     </section>
     <ul>
@@ -24,11 +27,11 @@
 
     <section>
         <h3><strong>Site Map:</strong></h3>
-        <img src="gloomap_f3049563.png" alt="Site Map">
+        <img src="images/gloomap_f3049563.png" alt="Site Map">
     </section>
 
     <section>
-        <h3><strong>Page Design:</strong> Home</h3>
+        <h4><strong>Page Design:</strong> Home</h4>
         <ul>
             <li><strong>Name of Page:</strong> Home</li>
             <li><strong>Purpose of the page:</strong> To provide a welcoming intro and give visitors a quick overview of how the rest of the site looks and guides them to view other sections</li>
@@ -42,7 +45,7 @@
     </section>
 
     <section>
-        <h3><strong>Page Design:</strong> About Me</h3>
+        <h4><strong>Page Design:</strong> About Me</h4>
         <ul>
             <li><strong>Name of the page:</strong> About</li>
             <li><strong>Purpose of the page:</strong>To give a more personal, in-depth view of who my client is, including your background, skills, what drives my client and allow visitors to connect with you on a personal level.</li>
@@ -57,7 +60,7 @@
         </ul>
     </section>
     <section>
-        <h3><strong>Page Design:</strong> Resume</h3>
+        <h4><strong>Page Design:</strong> Resume</h4>
         <ul>
             <li><strong>Name of the page:</strong> Resume</li>
             <li><strong>Purpose of the page:</strong>To display my clients professional qualifications, work history, and skill in a structured format. It will serve as an online version of their resume.</li>
@@ -72,7 +75,7 @@
         </ul>
     </section>
     <section>
-        <h3><strong>Page Design:</strong> Contact</h3>
+        <h4><strong>Page Design:</strong> Contact</h4>
         <ul>
             <li><strong>Name of Page:</strong> Contact</li>
             <li><strong>Purpose of the page:</strong> To provide an easy way for potential employers, collaborators, or clients to get in touch with my client.</li>
@@ -87,7 +90,7 @@
         </ul>
     </section>
     <section>
-        <h3><strong>Page Design:</strong> Projects</h3>
+        <h4><strong>Page Design:</strong> Projects</h4>
         <ul>
             <li><strong>Name of Page:</strong> Projects</li>
             <li><strong>Purpose of the page:</strong> To showcase my client’s work and accomplishments, providing tangible examples of what they’ve done. Allows visitors to see their abilities in action through project descriptions and links.</li>
@@ -108,5 +111,12 @@
         </p>
         <a href="lokeshdhakar.com/projects/lightbox2/#examples">GitHub link</a>
     </section>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

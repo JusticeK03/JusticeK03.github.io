@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Projects</h2>
+        <p>Here are some relevant projects that I've worked on.</p>
+        <ul>
+            <li>Simulation of a bouncing ball - 2023</li>
+            <li>Random Walk Simulation - 2023</li>
+        </ul>
+        <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="images/Project1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images/Project2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/Project1.png" class="modal-image">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/Project2.png" class="modal-image">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/Project1.png" onclick="currentSlide(1)" alt="Project1">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/Project2.png" onclick="currentSlide(2)" alt="Project2">
+      </div>
+    </div>
+  </div>
+  
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>

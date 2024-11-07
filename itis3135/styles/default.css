@@ -8,6 +8,9 @@ header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+header div {
+    padding: 13px;
+}
 
 .intro-pic {
     height: 420px;
