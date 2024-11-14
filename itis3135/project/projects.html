@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+    <!--<link rel="stylesheet" href="photoswipe/dist/photoswipe.css">-->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div data-include="components/header.html"></div>
@@ -17,33 +18,31 @@
             <li>Random Walk Simulation - 2023</li>
         </ul>
         <!-- Images used to open the lightbox -->
-<div class="row">
-    <div class="column">
-      <img src="images/Project1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="images/Project2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-  </div>
+    <div class="row">
+        <div class="column">
+          <img src="images/Project1.png" id="img1" class="hover-shadow" alt="project1">
+        </div>
+        <div class="column">
+          <img src="images/Project2.png" id="img2" class="hover-shadow" alt="project2">
+        </div>
+      </div>
   
   <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div id="my-modal" class="modal">
+    <span class="close cursor" id="close-modal-btn">&times;</span>
     <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="images/Project1.png" class="modal-image">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="images/Project2.png" class="modal-image">
-      </div>
+        <div class="my-slides">
+            <div class="number-text">1 / 4</div>
+            <img src="images/Project1.png" class="modal-image" alt="project1">
+        </div>
+        <div class="my-slides">
+            <div class="number-text">2 / 4</div>
+            <img src="images/Project2.png" class="modal-image" alt="project2">
+        </div>
   
       <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" id="prev-slide">&#10094;</a>
+      <a class="next" id="next-slide">&#10095;</a>
   
       <!-- Caption text -->
       <div class="caption-container">
@@ -52,10 +51,10 @@
   
       <!-- Thumbnail image controls -->
       <div class="column">
-        <img class="demo" src="images/Project1.png" onclick="currentSlide(1)" alt="Project1">
+          <img class="demo" src="images/Project1.png" id="thumb1" alt="Project1">
       </div>
       <div class="column">
-        <img class="demo" src="images/Project2.png" onclick="currentSlide(2)" alt="Project2">
+          <img class="demo" src="images/Project2.png" id="thumb2" alt="Project2">
       </div>
     </div>
   </div>
