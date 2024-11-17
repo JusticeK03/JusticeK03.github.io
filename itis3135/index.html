@@ -8,16 +8,31 @@
 	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div data-include="components/header.html"></div>
+	<header>
+		<h1>Justice Keistler's Jumbo Kiwi || ITIS 3135</h1>
+		<nav id="main-nav">
+		</nav>
+		<nav id="secondary-nav">
+		</nav>
+	</header>
 	<main>
 		<h2> ITIS 3135 : Home</h2>
 		<p class="main-p">This is all the content for my ITIS 3135 class </p>
 	</main>
-	<div data-include="components/footer.html"></div>
-		<script src="scripts/HTMLInclude.min.js"></script>
-		<script>
-			document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-			document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-		</script>
+		
+		<footer>
+			<div id="footer-links">
+			</div>
+			<p id="footer-message"></p>
+			<p class="footnote" id="footer-credits"></p>
+			
+			<a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+				<img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+			</a>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+				<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+			</a>
+		</footer>
+		<script src="scripts/script.js"></script>
 </body>
 </html>

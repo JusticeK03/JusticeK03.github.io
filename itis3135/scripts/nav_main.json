@@ -1,0 +1,7 @@
+[
+    {"name": "Home", "url": "./"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "contract.html"},
+    {"name": "About", "url": "about.html"},
+    {"name": "Website Evaluations", "url": "website_evaluations.html"}
+]

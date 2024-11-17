@@ -1,0 +1,12 @@
+[
+    {"name": "Design Firm", "url": "./keistlerandco.com/index.html"},
+    {"name": "Crappy Webpage", "url": "./stuff/CrApPY&.htm"},
+    {"name": "Tables", "url": "./tables.html"},
+    {"name": "Forms", "url": "./forms.html"},
+    {"name": "Hobby", "url": "hobby/index.html"},
+    {"name": "Project Overview", "url": "./project_overview.html"},
+    {"name": "First Scripts", "url": "./firstscripts.html"},
+    {"name": "BYO Intro", "url": "./byo_intro.html"},
+    {"name": "Drawing", "url": "./drawing.html"},
+    {"name": "Client Project", "url": "project/index.html"}
+]

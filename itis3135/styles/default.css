@@ -201,3 +201,16 @@ button {
         font-size: 16px;
     }
 }
+#main-nav {
+    padding: 10px;
+}
+header nav a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: inherit;
+}
+header nav a:not(:last-child)::after {
+    content:"|";
+    margin-left: 10px;
+    color: #4C5454;
+}
