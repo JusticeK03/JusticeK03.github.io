@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Gallery</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Justice Keistler's Jumbo Kiwi || ITIS 3135</h1>
+		<nav id="main-nav">
+		</nav>
+		<nav id="secondary-nav">
+		</nav>
+    </header>
+    <main>
+        <h2 class="page">Photo Gallery</h2>
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="images/gallery/judge.jpg" id="img1" class="hover-shadow" alt="Judge">
+            </div>
+            <div class="column">
+                <img src="images/gallery/universe.jpg" id="img2" class="hover-shadow" alt="Universe">
+            </div>
+            <div class="column">
+                <img src="images/gallery/snake.jpg" id="img3" class="hover-shadow" alt="Snake">
+            </div>
+            <div class="column">
+                <img src="images/gallery/transformer.jpeg" id="img4" class="hover-shadow" alt="Transformer">
+            </div>
+            <div class="column">
+                <img src="images/gallery/ireland.jpg" id="img5" class="hover-shadow" alt="Ireland">
+            </div>
+            <div class="column">
+                <img src="images/gallery/cat.jpg" id="img6" class="hover-shadow" alt="Cat">
+            </div>
+            <div class="column">
+                <img src="images/gallery/eye.jpg" id="img7" class="hover-shadow" alt="Eye">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="my-modal" class="modal">
+            <span class="close cursor" id="close-modal-btn">&times;</span>
+            <div class="modal-content">
+                <!-- Slides -->
+                <div class="my-slides">
+                    <div class="number-text">1 / 7</div>
+                    <img src="images/gallery/judge.jpg" alt="Judge">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">2 / 7</div>
+                    <img src="images/gallery/universe.jpg" alt="Universe">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">3 / 7</div>
+                    <img src="images/gallery/snake.jpg" alt="Snake">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">4 / 7</div>
+                    <img src="images/gallery/transformer.jpeg" alt="Transformer">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">5 / 7</div>
+                    <img src="images/gallery/ireland.jpg" alt="Ireland">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">6 / 7</div>
+                    <img src="images/gallery/cat.jpg" alt="Cat">
+                </div>
+                <div class="my-slides">
+                    <div class="number-text">7 / 7</div>
+                    <img src="images/gallery/eye.jpg" alt="Eye">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" id="prev-slide">&#10094;</a>
+                <a class="next" id="next-slide">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="thumbnail-row">
+                    <div class="column">
+                        <img class="demo" src="images/gallery/judge.jpg" alt="Judge" id="thumb1">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/universe.jpg" alt="Universe" id="thumb2">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/snake.jpg" alt="Snake" id="thumb3">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/transformer.jpeg" alt="Transformer" id="thumb4">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/ireland.jpg" alt="Ireland" id="thumb5">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/cat.jpg" alt="Cat" id="thumb6">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/gallery/eye.jpg" alt="Eye" id="thumb7">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-links">
+        </div>
+        <p id="footer-message"></p>
+        <p class="footnote" id="footer-credits"></p>
+        
+        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/gallery.js"></script>
+
+</body>
+</html>
